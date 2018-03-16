@@ -122,70 +122,6 @@ body {
    font-size: 20px;
 }
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
- /* background-color: #2196F3;*/
-  padding: 10px;
-}
-.dashbox-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 150px;
-
-  /*
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  
-  font-size: 30px;
-  text-align: center;*/
-}
-
-.dashbox-item-title {
-	background-color: cadetblue;	
-	color: honeydew;
-	width: 100%;
-	font-size: 12px;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-.dashbox-item-title .dashbox-title-left {
-	float: left;
-	width: 80%;
-	text-align: left;
-	/*background-color: ;*/
-}
-
-.dashbox-title-right {
-	margin-left: 80%;
-	/*background-color: yellow;*/
-	text-align: right;
-}
-
-.dashbox-item-body {	
-	background-color: ghostwhite;
-	width: 100%;
-	height: 130px;
-}
-
-.dashbox-item-body .body-title {
-	text-align: center;
-}
-
-.dashbox-item-body .body-info-text {
-	text-align: center;
-}
-
-.dashbox-item-body .body-chart-text canvas {
-	width: 70px;
-	height: 70px;
-}
-
-.section-dashbox {
-	background-color: gainsboro;
-}
-
 @media screen and (min-width: 540px) {
 	.main-left li {
 		font-size: 17px;
@@ -231,9 +167,6 @@ body {
 	}
 }
 
-.testee {
-
-}
 
 .footer {
 	height: 30px;

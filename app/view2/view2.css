@@ -1,0 +1,266 @@
+.content-left {
+	width: 20%;
+	min-width: 250px;
+	float: left;
+	height: 100VH;
+	background-color:  #f1f1f1;
+}
+
+.content-right {
+	width: 80%;
+	margin-left: 20%;
+}
+
+.content-head {
+	width: 100%;
+	height: 50px;
+}
+
+.content-title {
+	background-color: whitesmoke;	
+	height: 50px;
+}
+.content-dash {
+	height: calc(100vh - 150px);
+}
+.content-title-div {
+	/*position: absolute;*/
+	padding-top: 13px;
+	padding-left: 30px;
+	
+	font-size: 20px;
+	font-family: palatino;	
+	font-weight: bold;
+	
+	color: orange;
+}
+
+.form-search {
+	float: right;
+}
+
+.content-left .logo {
+	height: 100px;
+	background-color: #fff;
+}
+
+.logo img{
+	padding-top: 25px;
+	padding-left:  20%;
+	padding-right: 20%;
+	max-width: 250px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*width: 25%;*/
+    background-color: #f1f1f1;
+    text-align: center;
+    /*position: relative;*/    
+    /*overflow: auto;*/
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: orange;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.dash-footer {
+	height: 50px;
+	text-align: center;
+	color: orange;
+	background-color: #f1f1f1;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+ /* background-color: #2196F3;*/
+  padding: 10px;
+}
+.dashbox-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+ /* padding: 20px;
+  
+  font-size: 30px;
+  text-align: center;*/
+}
+
+.dashbox-item-title {
+	background-color: cadetblue;	
+	color: honeydew;
+	width: 100%;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.dashbox-item-title .dashbox-title-left {
+	float: left;
+	width: 80%;
+	text-align: left;
+	/*background-color: ;*/
+}
+
+.dashbox-title-right {
+	margin-left: 80%;
+	/*background-color: yellow;*/
+	text-align: right;
+}
+
+
+.dashbox-item-body .body-title {
+	text-align: center;
+}
+
+.dashbox-item-body .body-info-text {
+	text-align: center;
+}
+
+.dashbox-item-body .body-chart-text canvas {
+	width: 70px;
+	height: 70px;
+}
+
+.section-dashbox {
+	background-color: gainsboro;
+}
+
+
+@media screen and (min-width: 540px) {
+	
+}
+@media screen and (min-width: 720px) {
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: auto auto;	 
+	  padding: 5px;
+	}
+	.dashbox-item {
+		width: 230px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.grid-container {		
+		display: grid;
+	  	grid-template-columns: auto auto;
+		grid-column-gap: 15px;
+		grid-row-gap: 25px;
+	  
+	}
+	.dashbox-item {
+		width: 380px;
+	}
+	.section-dashbox {
+		padding-top: 25px;
+		padding-left: 50px;
+		height: calc(100vh - 150px);
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.grid-container {		
+		display: grid;
+	  	grid-template-columns: auto auto;
+		grid-column-gap: 15px;
+		grid-row-gap: 25px;
+	  
+	}
+	.dashbox-item {
+		width: 330px;
+	}
+	.section-dashbox {
+		padding-top: 25px;
+		padding-left: 50px;
+		height: calc(100vh - 150px);
+	}
+}
+
+@media screen and (min-width: 1380px) {
+		.grid-container {		
+		display: grid;
+	  	grid-template-columns: auto auto auto;
+		grid-column-gap: 15px;
+		grid-row-gap: 25px;
+	  
+	}
+	.dashbox-item {
+		width: 330px;
+
+	}
+	.section-dashbox {
+		padding-top: 25px;
+		padding-left: 50px;
+		height: calc(100vh - 150px);
+	}
+
+
+}
+
+@media screen and (min-width: 1550px) {
+	.grid-container {		
+		display: grid;
+	  	grid-template-columns: auto auto auto;
+		grid-column-gap: 15px;
+		grid-row-gap: 25px;
+	  
+	}
+	.dashbox-item {
+		width: 380px;
+
+	}
+	.section-dashbox {
+		padding-top: 25px;
+		padding-left: 50px;
+		height: calc(100vh - 150px);
+	}
+
+	.logo img{
+		max-width: 400px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.grid-container {		
+		display: grid;
+	  	grid-template-columns: auto auto auto;
+		grid-column-gap: 15px;
+		grid-row-gap: 25px;
+	  
+	}
+	.dashbox-item {
+		width: 450px;
+
+	}
+	.section-dashbox {
+		padding-top: 25px;
+		padding-left: 50px;
+		height: calc(100vh - 150px);
+	}
+
+	.logo img{
+		max-width: 400px;
+	}
+}
