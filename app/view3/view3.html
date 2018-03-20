@@ -1,0 +1,104 @@
+<div class="cms-container">
+	<div class="content-left-cms">
+		<div class="logo"><img src="images/logo.png"></div>
+		<div class="manu">
+			<nav class="nave">
+				<ul>
+				  <li class="menu"><a href="#home">HOME</a></li>
+				  <li class="submenu"><a href="#configure"><img src="images/svg/wrench.svg"/>Configurar</a></li>
+				  <li class="submenu"><a href="#configure"><img src="images/svg/cloud-down.svg"/>Exportar</a></li>
+				  <li class="menu"><a href="#dash">DASHBOARD</a></li>  
+				  <li class="submenu"><a href="#about"><img src="images/svg/dashboard-alt.svg"/>Dash</a></li>
+				  <li class="submenu"><a href="#about"><img src="images/svg/notepad.svg"/>Report</a></li>
+				  <li class="submenu"><a href="#about"><img src="images/svg/phone.svg"/>Incomming Call</a></li>
+				  <li class="submenu"><a href="#about"><img src="images/svg/pin.svg"/>Lost Call</a></li>
+				  <li class="menu"><a href="#message">MESSAGES <span class="badge">4</span></a></li>
+				  <li class="submenu">
+
+				  	<a href="#about"><img src="images/svg/envelope.svg"/>E-mail</a>
+				  </li>
+				  <li class="submenu">				  	
+				  	<a href="#about"><img src="images/svg/envelope-letter.svg"/>SMS</a></li>
+				  <li class="menu"><a href="#message">PLANOS</a></li>
+				  <li class="submenu">
+				  	<a href="#about"><img src="images/svg/money.svg"/>Criar Novo</a>
+				  </li>
+				  <li class="submenu">				  	
+				  	<a class="active" href="#about"><img src="images/svg/pencil.svg"/>Alterar</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="content-right-cms">
+		<div class="content-head-cms">
+			<div class="form-head-cms">
+			  <!--<span class="glyphicon glyphicon-search"></span>-->				
+			  <form class="form-search-cms">					  
+			    <input type="text" placeholder="Search">
+			    <button type="submit" class="btn btn-default btn-sm">Submit</button>			    
+			  </form>			  			 			  
+			  <div class="form-logged-cms">			  	
+			  	<img src="images/svg/cog.svg" alt="Configure Profile" />
+			  	<img src="images/svg/user-male.svg"/>
+			  	<span class="">Signed in as <b>{{username}} Juliano</b></span>
+			    <a href="#">Logout</a>
+			  </div>
+			</div>
+		</div>
+		<div class="content-title-cms">
+			<div class="content-title-div-cms"><strong>CMS Planos</strong></div>
+		</div>
+		<div class="content-cms">			
+			<section class="section-cmsplan">
+				<div class="grid-container-cmsplan">
+					<div class="form-cmsplan">
+						
+
+						<div class="form-style-5">
+						<form>
+						<fieldset>
+						<legend><span class="number">1</span> Package Info</legend>
+						<input type="text" name="pkgname" ng-model="pkgname" placeholder="Package Name *">
+						<input type="text" name="pkgvalue" ng-model="pkgvalue" placeholder="Package value *">
+						<label for="package">Package:</label>
+						<select id="package" name="package">
+						<optgroup label="package kind">
+						  <option value="standard">Standard</option>
+						  <option value="pro">Professional</option>
+						  <option value="advanced">Advanced</option>
+						  <option value="ultimate">Ultimate</option>  
+						  <option value="enterprise">Enterprise</option>  
+						</optgroup>
+						</select>      
+						</fieldset>
+						<fieldset>
+						<legend><span class="number">2</span> Additional Info</legend>
+						<textarea name="textarea1" ng-model="pkgline1" placeholder="line one additional info"></textarea>
+						<textarea name="textarea2" ng-model="pkgline2" placeholder="line two additional info"></textarea>
+						<textarea name="textarea3" ng-model="pkgline3" placeholder="line three additional info"></textarea>
+						</fieldset>
+						<input type="submit" value="Apply" />
+						</form>
+						</div>
+
+					</div>
+
+					<div class="preview-cmsplan">
+						<div class=preview-card>
+							<div class="card-head-stand">{{pkgname}}
+							</div>
+							<div class="card-price">R$ {{pkgvalue}}</div>
+							<div class="card-price-text">por mês</div>
+							<div class="card-price-textline1">{{pkgline1}}</div>
+							<div class="card-price-textline2">{{pkgline2}}</div>
+							<div class="card-price-textline3">{{pkgline3}}</div>
+						</div>
+					</div>
+
+				</div>
+			</section>		
+		</div>		
+	</div>
+	<footer class="cms-footer">All rights reserved to <strong>&copy; NextIp {{today | date:'y'}}</strong></footer>
+</div>

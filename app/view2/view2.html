@@ -4,10 +4,27 @@
 		<div class="manu">
 			<nav class="nave">
 				<ul>
-				  <li><a href="#home">Home</a></li>
-				  <li><a href="#news">News</a></li>
-				  <li><a class="active" href="#contact">Contact</a></li>
-				  <li><a href="#about">About</a></li>
+				  <li class="menu"><a href="#home">HOME</a></li>
+				  <li class="submenu"><a href="#configure"><img src="images/svg/wrench.svg"/>Configurar</a></li>
+				  <li class="submenu"><a href="#configure"><img src="images/svg/cloud-down.svg"/>Exportar</a></li>
+				  <li class="menu"><a href="#dash">DASHBOARD</a></li>  
+				  <li class="submenu"><a class="active" href="#about"><img src="images/svg/dashboard-alt.svg"/>Dash</a></li>
+				  <li class="submenu"><a href="#about"><img src="images/svg/notepad.svg"/>Report</a></li>
+				  <li class="submenu"><a href="#about"><img src="images/svg/phone.svg"/>Incomming Call</a></li>
+				  <li class="submenu"><a href="#about"><img src="images/svg/pin.svg"/>Lost Call</a></li>
+				  <li class="menu"><a href="#message">MESSAGES <span class="badge">4</span></a></li>
+				  <li class="submenu">
+
+				  	<a href="#about"><img src="images/svg/envelope.svg"/>E-mail</a>
+				  </li>
+				  <li class="submenu">				  	
+				  	<a href="#about"><img src="images/svg/envelope-letter.svg"/>SMS</a></li>
+				  <li class="menu"><a href="#message">PLANOS</a></li>
+				  <li class="submenu">
+				  	<a href="#about"><img src="images/svg/money.svg"/>Criar Novo</a>
+				  </li>
+				  <li class="submenu">				  	
+				  	<a href="#about"><img src="images/svg/pencil.svg"/>Alterar</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -15,16 +32,22 @@
 
 	<div class="content-right">
 		<div class="content-head">
-			<form class="form-head">
-			  <div class="form-search">
-			  	<span class="">Signed in as {{username}}</span>
+			<div class="form-head">
+			  <!--<span class="glyphicon glyphicon-search"></span>-->				
+			  <form class="form-search">					  
 			    <input type="text" placeholder="Search">
-			    <button type="submit" class="btn btn-default">Submit</button>
-			  </div>			  			 
-			</form>
+			    <button type="submit" class="btn btn-default btn-sm">Submit</button>			    
+			  </form>			  			 			  
+			  <div class="form-logged">			  	
+			  	<img src="images/svg/user-male.svg"/>
+			  	<span class="">Signed in as <b>{{username}} Juliano</b></span>
+			  	<img src="images/svg/cog.svg" alt="Configure Profile" />			  				  	
+			    <a href="#"><img src="images/svg/sign-error.svg"/>Logout</a>
+			  </div>
+			</div>
 		</div>
 		<div class="content-title">
-			<div class="content-title-div">Dashboard</div>
+			<div class="content-title-div"><strong>Dashboard</strong></div>
 		</div>
 		<div class="content-dash">			
 			<section class="section-dashbox">
@@ -55,10 +78,9 @@
 				  	<div class="dashbox-item-body">
 				  		<div class="body-title">body</div>
 				  		<div class="body-info-chart">
-				  			<canvas id="line" class="chart chart-line" chart-data="data"
-							chart-labels="labels" chart-series="series" chart-options="options"
-							chart-dataset-override="datasetOverride" chart-click="onClick">
-							</canvas>		  			
+				  			<canvas id="bar" class="chart chart-bar"
+							  chart-data="data" chart-labels="labelsBar"> chart-series="seriesBar"
+							</canvas>	  			
 				  		</div>
 				  		<div class="body-info-text">
 				  			info text - texto
@@ -101,10 +123,156 @@
 				  		</div>
 				  	</div>	
 				  </div>
+				  <div class="dashbox-item">
+				  	<div class="dashbox-item-title">
+				  		<div class="dashbox-title-left">title item1</div>
+				  		<div class="dashbox-title-right">...</div>
+				  	</div>
+				  	<div class="dashbox-item-body">
+				  		<div class="body-title">body</div>
+				  		<div class="body-info-chart">
+							<canvas id="doughnut" class="chart chart-doughnut"
+							  chart-data="data" chart-labels="labels">
+							</canvas> 
+				  		</div>
+				  		<div class="body-info-text">
+				  			info text - texto
+				  		</div>
+				  	</div>	
+				  </div>
+				  <div class="dashbox-item">
+				  	<div class="dashbox-item-title">
+				  		<div class="dashbox-title-left">title item1</div>
+				  		<div class="dashbox-title-right">...</div>
+				  	</div>
+				  	<div class="dashbox-item-body">
+				  		<div class="body-title">body</div>
+				  		<div class="body-info-chart">
+							<canvas id="radar" class="chart chart-radar"
+							  chart-data="data" chart-options="options" chart-labels="labels">
+							</canvas> 
+				  		</div>
+				  		<div class="body-info-text">
+				  			info text - texto
+				  		</div>
+				  	</div>	
+				  </div>
+
+				  <div class="dashbox-item">
+				  	<div class="dashbox-item-title">
+				  		<div class="dashbox-title-left">title item1</div>
+				  		<div class="dashbox-title-right">...</div>
+				  	</div>
+				  	<div class="dashbox-item-body">
+				  		<div class="body-title">body</div>
+				  		<div class="body-info-chart">
+							<canvas id="polar-area" class="chart chart-polar-area"
+							  chart-data="data" chart-labels="labels" chart-options="options">
+							</canvas>
+				  		</div>
+				  		<div class="body-info-text">
+				  			info text - texto
+				  		</div>
+				  	</div>	
+				  </div>
+
+				  <div class="dashbox-item">
+				  	<div class="dashbox-item-title">
+				  		<div class="dashbox-title-left">title item1</div>
+				  		<div class="dashbox-title-right">...</div>
+				  	</div>
+				  	<div class="dashbox-item-body">
+				  		<div class="body-title">body</div>
+				  		<div class="body-info-chart">
+							<canvas id="base" class="chart-bar"
+							  chart-data="data" chart-labels="labels" chart-colors="colors"
+							  chart-dataset-override="datasetOverride" >
+							</canvas> 
+				  		</div>
+				  		<div class="body-info-text">
+				  			info text - texto
+				  		</div>
+				  	</div>	
+				  </div>
+  
+
+  				  <div class="dashbox-item">
+				  	<div class="dashbox-item-title">
+				  		<div class="dashbox-title-left">title item1</div>
+				  		<div class="dashbox-title-right">...</div>
+				  	</div>
+				  	<div class="dashbox-item-body">
+				  		<div class="body-title">body</div>
+				  		<div class="body-info-chart">
+							<canvas id="base" class="chart-bar"
+							  chart-data="data" chart-labels="labels" chart-colors="colors"
+							  chart-dataset-override="datasetOverride" >
+							</canvas> 
+				  		</div>
+				  		<div class="body-info-text">
+				  			info text - texto
+				  		</div>
+				  	</div>	
+				  </div>
+
+
+				  <div class="dashbox-item">
+				  	<div class="dashbox-item-title">
+				  		<div class="dashbox-title-left">title item1</div>
+				  		<div class="dashbox-title-right">...</div>
+				  	</div>
+				  	<div class="dashbox-item-body">
+				  		<div class="body-title">body</div>
+				  		<div class="body-info-chart">
+							<canvas id="base" class="chart-bubble" chart-data="data"
+							  chart-series="series" >
+							</canvas> 
+				  		</div>
+				  		<div class="body-info-text">
+				  			info text - texto
+				  		</div>
+				  	</div>	
+				  </div>
+
+				  <div class="dashbox-item">
+				  	<div class="dashbox-item-title">
+				  		<div class="dashbox-title-left">title item1</div>
+				  		<div class="dashbox-title-right">...</div>
+				  	</div>
+				  	<div class="dashbox-item-body">
+				  		<div class="body-title">body</div>
+				  		<div class="body-info-chart">
+							<canvas id="base" class="chart-base" chart-type="type"
+							  chart-data="data" chart-labels="labels" >
+							</canvas>  
+				  		</div>
+				  		<div class="body-info-text">
+				  			info text - texto
+				  		</div>
+				  	</div>	
+				  </div>
+
+				  <div class="dashbox-item">
+				  	<div class="dashbox-item-title">
+				  		<div class="dashbox-title-left">title item1</div>
+				  		<div class="dashbox-title-right">...</div>
+				  	</div>
+				  	<div class="dashbox-item-body">
+				  		<div class="body-title">body</div>
+				  		<div class="body-info-chart">
+							<canvas id="base" class="chart-horizontal-bar"
+							  chart-data="data" chart-labels="labels" >
+							</canvas> 
+				  		</div>
+				  		<div class="body-info-text">
+				  			info text - texto
+				  		</div>
+				  	</div>	
+				  </div>
+
 				</div>
 			</section>		
 		</div>
-		<footer class="dash-footer">footer</footer>
+		<footer class="dash-footer">All rights reserved to <strong>&copy; NextIp {{today | date:'y'}}</strong></footer>
 	</div>
 </div>
-

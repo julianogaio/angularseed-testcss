@@ -1,16 +1,16 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute', 'chart.js'])
+angular.module('myApp.view3', ['ngRoute', 'chart.js'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view2', {
-    templateUrl: 'view2/view2.html',
-    controller: 'View2Ctrl'
+  $routeProvider.when('/view3', {
+    templateUrl: 'view3/view3.html',
+    controller: 'View3Ctrl'
   });
 }])
 
 
-.controller('View2Ctrl', [ '$scope', function($scope) {
+.controller('View3Ctrl', [ '$scope', function($scope) {
   $scope.today = new Date();
 
   $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
