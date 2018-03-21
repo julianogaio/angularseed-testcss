@@ -178,3 +178,10 @@ body {
     /*bottom: 0;*/
     background-color: orange;  
 }
+.logged-footer{
+	padding-top: 10px;
+	height: 50px;
+	background-color: #f1f1f1;	
+	text-align: center;
+	color: black;
+}
