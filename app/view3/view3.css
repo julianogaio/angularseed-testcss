@@ -84,12 +84,7 @@
 }
 
 .cms-footer {	
-	/*
-	
-	bottom: 0;
-	position: fixed;
-	width: 100%;
-	*/
+
 	padding-top: 10px;
 	height: 50px;
 	background-color: #f1f1f1;	
@@ -110,7 +105,10 @@
 	font-family: palatino;	
 	font-weight: bold;
 	
-	color: orange;
+	color: chocolate;
+}
+.content-title-div-cms strong {
+	margin-left: 5%;
 }
 .form-logged-cms{
 	float: right;
@@ -151,8 +149,9 @@
 	width: 100%;*/
 }
 .form-cmsplan {
-	margin-right: 5px;
-	margin-left: 5px;
+	margin-right: 10px;
+	margin-left: 50px;
+	margin-top: 30px;
 	/*
 	margin-top: 50px;
     background-color: darkgrey;

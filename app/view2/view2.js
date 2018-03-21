@@ -12,7 +12,7 @@ angular.module('myApp.view2', ['ngRoute', 'chart.js'])
 
 .controller('View2Ctrl', [ '$scope', function($scope) {
   $scope.today = new Date();
-  $scope.AreaName = "Dashboard Reports"
+  $scope.AreaName = "Dashboard Reports";
   $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
   $scope.series = ['Series A', 'Series B'];
   $scope.data = [
