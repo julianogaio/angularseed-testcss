@@ -8,8 +8,24 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.view3',
   'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {	
+])
+.directive('myMenu', function(){
+	return {
+		templateUrl: 'menu.html'
+	}
+})
+.directive('myFooter', function(){
+	return {
+		templateUrl: 'footer.html'
+	}
+})
+.directive('myHeaderLogged', function(){
+	return {
+		templateUrl: 'header.html'
+	}
+})
+
+.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {	
 
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);

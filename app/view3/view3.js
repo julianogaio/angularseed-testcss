@@ -12,6 +12,7 @@ angular.module('myApp.view3', ['ngRoute', 'chart.js'])
 
 .controller('View3Ctrl', [ '$scope', function($scope) {
   $scope.today = new Date();
+  $scope.AreaName = "Plans CMS";
 
   $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
   $scope.series = ['Series A', 'Series B'];
