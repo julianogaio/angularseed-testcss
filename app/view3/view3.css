@@ -1,7 +1,4 @@
 
-.nave{
-	padding-top: 30px;
-}
 
 ].cms-container{
 	/*min-width: 800px;*/
@@ -70,18 +67,19 @@
 	background-color:  #f1f1f1;
 }
 
-
-.content-left-cms .logo {
+/*
+.content-left-cms .logo-planos {
 	height: 100px;
 	background-color: #fff;
 }
 
-.logo img{
+.logo-planos img{
 	padding-top: 25px;
 	padding-left:  20%;
 	padding-right: 20%;
 	max-width: 250px;
 }
+*/
 
 .cms-footer {	
 
@@ -94,6 +92,7 @@
 	height: calc(100vh - 150px);
 	overflow-y: auto;
 	background-color: gainsboro;
+	border-radius: 10px;
 }
 .content-title-div-cms {
 	/*position: absolute;*/
@@ -135,7 +134,7 @@
 	width: 100%;
 	height: 50px;
 	padding-top: 10px;
-    padding-right: 5vw;
+    padding-right: 5vw;   
 }
 
 .content-title-cms {

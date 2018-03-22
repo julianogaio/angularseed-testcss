@@ -7,36 +7,41 @@
 	<div class="content-right-cms">
 		<div my-header-logged></div>
 		<div class="content-cms">			
-			<section class="section-cmsplan">
+			<div class="section-cmsplan">
 				<div class="grid-container-cmsplan">
 					<div class="form-cmsplan">
 						
 
 						<div class="form-style-5">
-						<form>
-						<fieldset>
-						<legend><span class="number">1</span> Package Info</legend>
-						<input type="text" name="pkgname" ng-model="pkgname" placeholder="Package Name *">
-						<input type="text" name="pkgvalue" ng-model="pkgvalue" placeholder="Package value *">
-						<label for="package">Package:</label>
-						<select id="package" ng-model="choosedplan" name="package">
-						<optgroup label="package kind">
-						  <option value="corStandard">Standard</option>
-						  <option value="corPro">Professional</option>
-						  <option value="corAdvanced">Advanced</option>
-						  <option value="corUltimate">Ultimate</option>  
-						  <option value="corEnterprise">Enterprise</option>  
-						</optgroup>
-						</select>      
-						</fieldset>
-						<fieldset>
-						<legend><span class="number">2</span> Additional Info</legend>
-						<textarea name="textarea1" ng-model="pkgline1" placeholder="line one additional info"></textarea>
-						<textarea name="textarea2" ng-model="pkgline2" placeholder="line two additional info"></textarea>
-						<textarea name="textarea3" ng-model="pkgline3" placeholder="line three additional info"></textarea>
-						</fieldset>
-						<input type="submit" value="Apply" />
-						</form>
+							<form>
+								<fieldset>
+								<legend><span class="number">1</span> Package Info</legend>
+								<input type="text" name="pkgname" ng-model="pkgname" placeholder="Package Name *">
+								<input type="text" name="pkgvalue" ng-model="pkgvalue" placeholder="Package value *">
+								<label for="package">Package:</label>
+								<select id="package" ng-model="choosedplan" name="package">
+								<optgroup label="package kind">
+								  <option value="corStandard">Standard</option>
+								  <option value="corPro">Professional</option>
+								  <option value="corAdvanced">Advanced</option>
+								  <option value="corUltimate">Ultimate</option>  
+								  <option value="corEnterprise">Enterprise</option>  
+								</optgroup>
+								</select>      
+								</fieldset>
+								<fieldset>
+								<legend><span class="number">2</span> Additional Info</legend>
+								<textarea name="textarea1" ng-model="pkgline1" placeholder="line one additional info"></textarea>
+								<textarea name="textarea2" ng-model="pkgline2" placeholder="line two additional info"></textarea>
+								<textarea name="textarea3" ng-model="pkgline3" placeholder="line three additional info"></textarea>
+								</fieldset>
+								<fieldset>
+								<legend><span class="number">3</span> Publish Info</legend>								
+								<input type="checkbox" name="animal" value="alwaysvisible" />Sempre visível 
+			                    <input type="checkbox" name="animal" value="periodic" /> Publicado no período:			                        
+								</fieldset>
+								<input type="submit" value="Apply" />
+							</form>
 						</div>
 
 					</div>
@@ -54,8 +59,8 @@
 					</div>
 
 				</div>
-			</section>		
+			</div>		
 		</div>		
 	</div>
-	<div my-footer></div>
+	
 </div>
