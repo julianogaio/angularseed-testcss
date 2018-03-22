@@ -92,7 +92,7 @@
 }
 .content-cms {
 	height: calc(100vh - 150px);
-	/*max-width: 80vw;*/
+	overflow-y: auto;
 	background-color: gainsboro;
 }
 .content-title-div-cms {
