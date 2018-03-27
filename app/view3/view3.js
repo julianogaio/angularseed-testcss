@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view3', ['ngRoute', 'chart.js'])
+angular.module('myApp.view3', ['ngRoute','ngMaterial', 'ngMessages', 'chart.js'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view3', {
@@ -13,6 +13,12 @@ angular.module('myApp.view3', ['ngRoute', 'chart.js'])
 .controller('View3Ctrl', [ '$scope', function($scope) {
   $scope.today = new Date();
   $scope.AreaName = "Gerencia de Planos";
+
+
+this.myDateIni = new Date();
+this.myDateFim = new Date();
+this.isOpen = false;
+
 
   $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
   $scope.series = ['Series A', 'Series B'];

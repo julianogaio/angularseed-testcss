@@ -38,7 +38,17 @@
 								<fieldset>
 								<legend><span class="number">3</span> Publish Info</legend>								
 								<input type="checkbox" name="animal" value="alwaysvisible" />Sempre visível 
-			                    <input type="checkbox" name="animal" value="periodic" /> Publicado no período:			                        
+			                    <input type="checkbox" name="animal" value="periodic" /> Publicado no período de:
+
+								<div>
+								    <div style="width: 100px; float: left">
+								      <h4>Standard date-picker</h4>
+								      <md-datepicker ng-model="myApp.myDateIni" md-placeholder="Enter date"></md-datepicker>
+								    </div>								
+								     
+								 </div>
+
+			          
 								</fieldset>
 								<input type="submit" value="Apply" />
 							</form>

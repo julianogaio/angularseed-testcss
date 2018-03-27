@@ -1,0 +1,29 @@
+.pb{
+	display: grid;
+	grid-template-rows: 30px 1fr 50px;
+   	grid-template-columns: 150px 1fr  150px;
+	
+   	grid-template-areas: "header" "header" "header"
+   	   					 "menu" "maincontent" "aside"
+   						 "footer" "footer" "footer";
+}
+.menuc {
+	grid-area: menu;
+	border:solid black;
+}
+.asidec {
+	grid-area: aside;	
+	border:solid red;
+}
+.headerc {
+	grid-area: header
+	border:solid blue;
+}
+.main-contentc {
+	grid-area: maincontent;
+	border:solid yellow;
+}
+.footerc {
+	grid-area: footer;
+	border:solid green;
+}
