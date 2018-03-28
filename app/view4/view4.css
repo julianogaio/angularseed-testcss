@@ -1,29 +1,42 @@
 .pb{
-	display: grid;
-	grid-template-rows: 30px 1fr 50px;
-   	grid-template-columns: 150px 1fr  150px;
-	
-   	grid-template-areas: "header" "header" "header"
-   	   					 "menu" "maincontent" "aside"
-   						 "footer" "footer" "footer";
+
 }
 .menuc {
-	grid-area: menu;
+	height: calc(100vh - 250px);
 	border:solid black;
 }
 .asidec {
-	grid-area: aside;	
+	height: calc(100vh - 250px);
 	border:solid red;
 }
 .headerc {
-	grid-area: header
+	min-height: 100px;	
 	border:solid blue;
 }
-.main-contentc {
-	grid-area: maincontent;
+.content .main-contentc {
+	height: calc(100vh - 250px);
 	border:solid yellow;
 }
 .footerc {
-	grid-area: footer;
+	min-height: 150px;
 	border:solid green;
+}
+.content {
+	height: calc(100vh - 250px);
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {  
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) and (max-width: @screen-sm-max) { 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
 }
